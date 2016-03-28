@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+
+public class Classe {
+	private int effectifMax;
+	//Création de la liste
+	private ArrayList<Eleve> classe;
+	
+	//Constructeur de l'objet Classe
+	public Classe(){
+		this.effectifMax = 4;
+		//On crée l'espace mémoire pour la liste classe
+		this.classe = new ArrayList<Eleve>();
+	}
+	
+	//Ajoute un élève dans classe
+	public void ajoutEleve(Eleve el){
+		this.classe.add(el);
+	}
+	
+	public void supprimerEleve(){
+		int index;
+		
+		this.classe.remove(index); // index = identifiant
+	}
+	
+	public int rechercheEleve(String nom){
+		int index, nbmax;
+		
+		nbmax = this.classe.size();
+		while(){
+			
+		}
+		
+		return index;
+	}
+}
