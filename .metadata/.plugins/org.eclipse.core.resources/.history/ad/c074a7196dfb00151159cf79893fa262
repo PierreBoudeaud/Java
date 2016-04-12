@@ -1,0 +1,44 @@
+package gestion_classe;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+public class Classe {
+	private ArrayList<Eleve> liste;
+	private int effectifMax;
+	
+	public Classe(){
+		liste = new ArrayList<Eleve>();
+		effectifMax = 20;
+	}
+	
+	public void creation(Eleve el){
+		if(this.liste.size() <= effectifMax){
+			this.liste.add(el);
+		}
+		else{
+			System.out.println("Erreur : Classe pleine !!!");
+		}
+	}
+	
+	public void supprimerClasse(){
+		this.liste.removeAll(liste);
+	}
+	
+	public void afficherClasse(){
+		for(Eleve el: this.liste){
+			el.Afficher();
+		}
+	}
+	
+	private void trieClasse(){
+		Collections.sort(liste, new Comparator<Eleve>(){
+			@Override
+			public int compare(Eleve el1, Eleve el2){
+				return el1.DonneNom().compareTo(el2.DonneNom());
+			}
+			
+		});
+	);}
+}

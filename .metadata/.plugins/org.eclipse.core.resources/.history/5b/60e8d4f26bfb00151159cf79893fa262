@@ -1,0 +1,9 @@
+package gestion_classe;
+
+public class Eleve {
+	private String nom, adresse, dateNaissance;
+	
+	public Eleve(nom, adresse, dateNaissance){
+		
+	}
+}

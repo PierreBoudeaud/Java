@@ -1,0 +1,13 @@
+package gestion_classe;
+
+import java.util.ArrayList;
+
+public class Classe {
+	private ArrayList<Eleve> classe;
+	private int effectifMax;
+	
+	public Classe(){
+		this.classe = new ArrayList<Eleve>();
+		this.effectifMax = 20;
+	}
+}

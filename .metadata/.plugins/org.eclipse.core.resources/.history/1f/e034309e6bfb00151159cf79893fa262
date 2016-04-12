@@ -1,0 +1,34 @@
+package gestion_classe;
+
+import java.util.ArrayList;
+
+public class Classe {
+	private ArrayList<Eleve> liste;
+	private int effectifMax;
+	
+	public Classe(){
+		liste = new ArrayList<Eleve>();
+		effectifMax = 20;
+	}
+	
+	public void creation(Eleve el){
+		if(this.liste.size() <= effectifMax){
+			this.liste.add(el);
+		}
+		else{
+			System.out.println("Erreur : Classe pleine !!!");
+		}
+	}
+	
+	public void supprimerClasse(){
+		this.liste.removeAll(liste);
+	}
+	
+	public void afficherClasse(){
+		Eleve el;
+		
+		for(el: liste){
+			
+		}
+	}
+}

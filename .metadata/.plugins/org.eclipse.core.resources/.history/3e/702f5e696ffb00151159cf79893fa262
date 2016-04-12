@@ -1,0 +1,21 @@
+package gestion_classe;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		Eleve el;
+		Classe STS;
+		
+		STS = new Classe();
+		el = new Eleve("Pierre Boudeaud", "7 Boulevard du 8 mai 1945", "06/05/1997");
+		STS.creation(el);
+		el = new Eleve("Laëtitia Marchand", "7 Boulevard du 8 mai 1945", "02/04/1997");
+		STS.creation(el);
+		STS.afficherClasse();
+		System.out.println("---------------");
+		STS.supprimerEleve(el);
+		el = new Eleve("Laëtitia Marchand", "7 Boulevard du 8 mai 1945", "02/04/1997");
+		STS.afficherClasse();
+	}
+
+}

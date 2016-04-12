@@ -1,0 +1,8 @@
+package gestion_classe;
+
+import java.util.ArrayList;
+
+public class Classe {
+	private ArrayList<Eleve> Classe;
+	private int EffectifMax;
+}

@@ -1,0 +1,9 @@
+package gestion_classe;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
